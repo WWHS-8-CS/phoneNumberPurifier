@@ -20,15 +20,15 @@ public class phoneNumber {
 			}
 		}
 		
-		if(newNumber.length() != 9)
+		if(newNumber.length() != 10)
 		{
 			System.out.println("This is no phone number!!!");
 			System.exit(0);
 		}
-			
-		System.out.println("Finished number: " + newNumber);
 		
-		int intNumber = Integer.parseInt(newNumber);	//Finished phone number	
+		int finalNumber = Integer.parseInt(newNumber);	//Finished phone number	
+		System.out.println("Finished number: " + finalNumber);
+		
 		
 	}
 
