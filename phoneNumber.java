@@ -6,7 +6,6 @@ public class phoneNumber {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Please enter a phone number: ");
 		String rawNumber = scan.nextLine();
-		System.out.println(rawNumber);
 		String temp = "";
 		String newNumber = "";
 		
@@ -25,7 +24,7 @@ public class phoneNumber {
 			System.exit(0);
 		}
 		
-		int finalNumber = Integer.parseInt(newNumber);	//Finished phone number	
+		long finalNumber = Long.parseLong(newNumber);	//Finished phone number	
 		System.out.println("Finished number: " + finalNumber);
 		
 		
