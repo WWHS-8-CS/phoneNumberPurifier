@@ -7,7 +7,6 @@ public class phoneNumber {
 		System.out.print("Please enter a phone number: ");
 		String rawNumber = scan.nextLine();
 		System.out.println(rawNumber);
-		//boolean edit = true;
 		String temp = "";
 		String newNumber = "";
 		
