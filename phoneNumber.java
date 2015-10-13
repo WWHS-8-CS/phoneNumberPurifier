@@ -4,6 +4,15 @@ public class phoneNumber {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
+		
+
+
+
+
+
+
+		System.out.print("Please enter a Name: ");
+		String name = scan.next();
 		System.out.print("Please enter a phone number: ");
 		String rawNumber = scan.nextLine();
 		String temp = "";
@@ -18,14 +27,14 @@ public class phoneNumber {
 			}
 		}
 		
-		if(newNumber.length() != 10)
+		if(newNumber.length() != 10 || newNumber.length() != 7)
 		{
 			System.out.println("This is no phone number!!!");
 			System.exit(0);
 		}
 		
 		long finalNumber = Long.parseLong(newNumber);	//Finished phone number	
-		System.out.println("Finished number: " + finalNumber);
+		System.out.println("Name: " + name + " and Number: " + finalNumber);
 		
 		
 	}
